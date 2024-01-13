@@ -8,7 +8,7 @@ services:
     #build:
       #context: .
     #image: test-auto-docker-build
-    image: ghcr.io/scadaguru/test-auto-docker-build:69f8d8550a477525e951cd90ebdc7e3edb05ccbe
+    image: ghcr.io/scadaguru/test-auto-docker-build:latest
     container_name: test-auto-docker-build
     volumes:
       - ./:/config
