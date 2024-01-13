@@ -15,4 +15,3 @@ jobs:
           docker login --username scadaguru --password ${{ secrets.GHCR_TOKEN }} ghcr.io
           docker build . -t ghcr.io/scadaguru/test-auto-docker-build:v0.0.1
           docker push ghcr.io/scadaguru/test-auto-docker-build:v0.0.1
-          docker push ghcr.io/scadaguru/test-auto-docker-build:latest
