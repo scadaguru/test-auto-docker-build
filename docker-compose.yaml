@@ -5,9 +5,10 @@ version: '3.9'
 
 services:
   test-auto-docker-build:
-    build:
-      context: .
-    image: test-auto-docker-build
+    #build:
+      #context: .
+    #image: test-auto-docker-build
+    image: ghcr.io/scadaguru/test-auto-docker-build:latest
     container_name: test-auto-docker-build
     volumes:
       - ./:/config
