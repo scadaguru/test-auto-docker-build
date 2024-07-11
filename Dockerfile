@@ -10,4 +10,7 @@ COPY *.py /src
 
 EXPOSE 5000
 
+ARG GIT_TAG=unknown
+LABEL version=$GIT_TAG
+
 CMD ["python", "-u", "/src/main.py" ]
